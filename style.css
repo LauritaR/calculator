@@ -1,0 +1,104 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    min-width: 320px;
+    background-color: azure;
+}
+
+.container{
+    background-color:#d8e2dc;
+    min-width:320px;
+    width: 50%;
+    height: 70%;
+    border-radius: 5px;
+    margin-top:15vh;
+    padding:10px;
+    box-shadow: 13px 13px 20px #cbced1,
+            -13px -13px 20px #ffffff;
+
+}
+ .output .view
+{
+    background-color: #ffe5d9;
+    width: 90%;
+    margin-left: 2.5vw;
+    height: 5vh;
+    font-size: 25px;
+    outline:none;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #335c677f;
+    text-align: right;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #afb2b5;
+}
+
+.buttons{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 4vh 0 4vh 0;
+    width:100%;
+    
+}
+.buttons .row{
+    min-width: 320px;
+    width:100%;
+    min-height:5vh;
+    height: 100%;
+    display: flex;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.buttons .row button{
+    background-color:#ffe5d9;
+    outline: none;
+    border:none;
+    min-width: 50px;
+    width:100%;
+    font-size:1em;
+    padding: 10px;
+    min-height:30px;
+    height: 100%;
+    border-radius: 5px;
+    margin:5px;
+   
+}
+.buttons .row #number
+{
+    background-color:#f8c5ad;
+    
+}
+.buttons .row #number:hover
+{
+    background: #e49797;
+}
+.buttons .row #dlt
+{
+    background-color:#335c677f;
+}
+.buttons .row #dlt:hover
+{
+    
+    background: #1a363e7f;
+}
+
+.row button:hover
+{
+    background: #fff;
+}
+
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="output">
+            <input class="view" type="text" placeholder="0">
+        </div>
+
+        <div class="buttons">
+            <div class="row">
+                <button type="button" value="sin" onclick="trg('sin')">sin</button>          
+                <button type="button" value="cos" onclick="trg('cos')">cos</button>
+                <button type="button" value="tg" onclick="trg('tg')">tg</button>
+                <button id="dlt" type="button" value="C" onclick="delete_all()">C</button>
+                <button id="dlt" type="button" value="Dlt" onclick="delete_last()" ><i class="fa-solid fa-delete-left" style="color: #384242;"></i></button>
+            </div> 
+
+            <div class="row">
+                <button type="button" value="x^2" onclick="pow_2()">x<sup>2</sup></button>
+                <button type="button" value="(" onclick="number('(')">(</button>
+                <button type="button" value=")" onclick="number(')')">)</button>
+                <button type="button" value="fact" onclick="factorial()">x!</button>
+                <button type="button" value="/" onclick="number('/')">/</button>
+            </div> 
+
+             <div class="row">
+                <button type="button" value="x^y" onclick="pow_y()">x<sup>y</sup> </button>
+                <button id="number" type="button" value="7"onclick="number('7')">7</button>
+                <button id="number" type="button" value="8" onclick="number('8')">8</button>
+                <button id="number" type="button" value="9" onclick="number('9')">9</button>
+                <button type="button" value="*" onclick="number('*')">x</button>
+              
+             </div>
+            <div class="row">
+                <button type="button" value="root" onclick="root()">√x</button>
+                <button id="number" type="button" value="4" onclick="number('4')">4</button>
+                <button id="number" type="button" value="5" onclick="number('5')">5</button>
+                <button id="number" type="button" value="6" onclick="number('6')">6</button>
+                <button type="button" value="-" onclick="number('-')">-</button>
+        
+            </div>
+            <div class="row">
+                <button type="button" value="ln" onclick="log('ln')">ln</button>
+                <button id="number"  type="button" value="1" onclick="number('1')">1</button>
+                <button id="number"  type="button" value="2" onclick="number('2')">2</button>
+                <button id="number" type="button" value="3" onclick="number('3')">3</button>
+                <button type="button" value="+" onclick="number('+')">+</button>
+            </div>
+            <div class=" row">
+                <button type="button" value="lg" onclick="log('lg')">lg </button>
+                <button  id="number" type="button" value="00" onclick="number('00')">00</button>
+                <button id="number" type="button" value="0" onclick="number('0')">0</button>
+                <button type="button" value="." onclick="number('.')">.</button>
+                <button type="button" value="=" onclick="calculate()">=</button>
+            </div>
+                        
+        </div>
+    </div>
+    <script src="./script.js"> </script>
+    <script src="https://kit.fontawesome.com/b261dd02f8.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
